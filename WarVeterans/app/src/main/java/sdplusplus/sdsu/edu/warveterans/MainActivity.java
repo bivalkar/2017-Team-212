@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_function(View view) {
-        System.out.println("Hello World");
+        System.out.println("New Branch");
     }
 }
