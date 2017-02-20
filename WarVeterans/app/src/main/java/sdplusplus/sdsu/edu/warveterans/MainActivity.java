@@ -1,7 +1,8 @@
 package sdplusplus.sdsu.edu.warveterans;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,11 +14,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_function(View view) {
-        System.out.println("New Gowtham");
-        System.out.println("New Alpita");
-        System.out.println("Gowtham");
-        System.out.println("Alpita");
-        System.out.println("git clean -fd to remove untracked changes...changes that git is not tracking");
-        System.out.println("create con");
+        Intent go = new Intent(MainActivity.this,CountActivity.class);
+        startActivity(go);
+
     }
 }

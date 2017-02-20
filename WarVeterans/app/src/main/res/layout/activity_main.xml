@@ -8,30 +8,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0000FF"
     tools:context="sdplusplus.sdsu.edu.warveterans.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
     <Button
-        android:text="@string/click_me"
+        android:text="@string/Report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:onClick="click_function"
+        android:id="@+id/report"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="179dp"
-        android:onClick="click_function"
-        android:id="@+id/button" />
+        android:visibility="visible"
+        tools:text="Report"/>
 
-    <TextView
-        android:text="@string/new_change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/button"
-        android:layout_marginTop="69dp"
-        android:id="@+id/textView2" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
 </RelativeLayout>
