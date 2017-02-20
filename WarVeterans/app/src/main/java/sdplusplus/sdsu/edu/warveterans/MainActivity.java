@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void click_function(View view) {
         System.out.println("New Branch");
-        System.out.println("Gowtham B");
-        System.out.println("Alpita M");
+        System.out.println("Gowtham");
+        System.out.println("Alpita");
         System.out.println("git clean -fd to remove untracked changes...changes that git is not tracking");
         System.out.println("Create conflict");
     }
