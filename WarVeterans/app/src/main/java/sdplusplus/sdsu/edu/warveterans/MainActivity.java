@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("New Branch");
         System.out.println("Gowtham B");
         System.out.println("Alpita M");
+        System.out.println("git clean -fd to remove untracked changes...changes that git is not tracking");
     }
 }
