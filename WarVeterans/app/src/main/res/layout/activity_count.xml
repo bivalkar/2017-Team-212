@@ -12,50 +12,15 @@
               tools:context="sdplusplus.sdsu.edu.warveterans.MainActivity"
               android:weightSum="1">
 
-    <Button
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:text="-"
-        android:textSize="56sp"
-        android:textColor="#90CAF9"
-        android:onClick="decrement"
-        android:background="#76FF03"
-        android:layout_below="@+id/button8"
-        android:layout_alignParentStart="true"
-        android:id="@+id/button12"/>
-
     <TextView
         android:text="Veterans"
         android:layout_width="98dp"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_weight="0.18"/>
 
-    <Button
-        android:layout_width="161dp"
-        android:layout_height="53dp"
-        android:text="DONE"
-        android:onClick="forward"
-        android:textSize="30dp"
-        android:layout_marginLeft="89dp"
-        android:background="#3D5AFE"
-        android:layout_weight="0.47"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="88dp"
-        android:text="+"
-        android:textSize="50dp"
-        android:textColor="#90CAF9"
-        android:onClick="increment"
-        android:background="#76FF03"
-        android:id="@+id/button8"
-        android:layout_below="@+id/button9"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="114dp"/>
-
     <TextView
-        android:id="@+id/value_text_view"
+        android:id="@+id/textView3"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:text="0"
@@ -68,15 +33,18 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="71dp"/>
 
-    <Button
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:text="-"
-        android:textSize="56sp"
-        android:textColor="#90CAF9"
-        android:onClick="decrement"
-        android:background="#76FF03"
-        android:layout_centerVertical="true"
+    <TextView
+        android:id="@+id/value_text_view"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#8C9EFF"
+        android:textAllCaps="true"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
         android:layout_alignParentEnd="true"/>
 
     <Button
@@ -87,7 +55,67 @@
         android:textColor="#90CAF9"
         android:onClick="increment"
         android:background="#76FF03"
-        android:layout_below="@+id/value_text_view"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button8"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:text="+"
+        android:textSize="50dp"
+        android:textColor="#90CAF9"
+        android:onClick="increment"
+        android:background="#76FF03"
+        android:id="@+id/button8"
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/button12"
+        android:layout_alignStart="@+id/button12"/>
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:text="-"
+        android:textSize="56sp"
+        android:textColor="#90CAF9"
+        android:onClick="decrement"
+        android:background="#76FF03"
+        android:id="@+id/button12"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView3"/>
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:text="-"
+        android:textSize="56sp"
+        android:textColor="#90CAF9"
+        android:onClick="decrement"
+        android:background="#76FF03"
+        android:layout_alignTop="@+id/button12"
         android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:text="Non-Veterans"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.18"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/button13"/>
+
+    <Button
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:text="DONE"
+        android:onClick="forward"
+        android:textSize="30dp"
+        android:layout_marginLeft="89dp"
+        android:background="#3D5AFE"
+        android:layout_weight="0.47"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/value_text_view"/>
 
 </RelativeLayout>
