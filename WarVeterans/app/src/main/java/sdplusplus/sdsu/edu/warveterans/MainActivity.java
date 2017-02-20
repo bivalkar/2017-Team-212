@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void click_function(View view) {
         System.out.println("New Branch");
-        System.out.println("Alpita M");
+        System.out.println("Alpita");
         System.out.println("Gowtham");
     }
 }
