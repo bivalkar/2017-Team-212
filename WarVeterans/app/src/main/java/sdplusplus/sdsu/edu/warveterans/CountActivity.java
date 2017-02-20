@@ -1,10 +1,12 @@
 package sdplusplus.sdsu.edu.warveterans;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Interpolator;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -21,8 +23,9 @@ public class CountActivity extends ActionBarActivity {
     /**
      * This method is called when the calculate button is clicked.
      */
-    public void calculateExperience(View view) {
-        display(quantity);
+    public void forward(View view) {
+        Intent go = new Intent(CountActivity.this, NeedsActivity.class);
+        startActivity(go);
     }
     /**
      * Increment
